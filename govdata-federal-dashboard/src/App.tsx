@@ -53,12 +53,11 @@ const Treemap: React.FC<{ data: DataContributionMeta[] }> = ({ data }) => {
           from: "color",
           modifiers: [["darker", 2]],
         }}
-        outerPadding={8}
+        outerPadding={4}
         parentLabelTextColor={{
           from: "color",
           modifiers: [["darker", 3]],
         }}
-        colors={{ scheme: "yellow_orange_red" }}
         borderColor={{
           from: "color",
           modifiers: [["darker", 0.1]],
