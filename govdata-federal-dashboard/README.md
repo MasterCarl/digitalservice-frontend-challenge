@@ -1,37 +1,29 @@
 # GovData dashboard for federal institutions
 
-Brief description
+This dashboard shows how many datasets were contributed to GovData.de by different ministries and their institutions. Users may opt to show/hide non-ministries, and include departments, public-law institutions, and data catalogs (e.g., mCLOUD) under their supervising ministry.
+
+The dashboard is based on React. It uses the treemap chart from [Nivo](https://nivo.rocks), which is based, in turn, on d3.js. For testing, Jest is used in conjunction with testing-library. [Vite](https://vitejs.dev) is used for frontend tooling, in conjunction with [SWC](https://swc.rs) (Speedy Web Compiler).
 
 ## Installation
 
 Yarn is used as the package manager. If not available, refer to the [installation instructions](https://yarnpkg.com/getting-started/install) to install it.
 
-After that, run `yarn` to install project dependencies, and `yarn dev` to start the local development server. Follow the instructions in your terminal to view the application in your browser.
+With `yarn` installed, run `yarn` to install project dependencies, and `yarn dev` to start the local development server. Follow the instructions in your terminal to view the application in your browser.
 
-# React + TypeScript + Vite
+## Testing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run logic and UI tests, run `yarn test`. Please note that the tests don't cover the complete dashboard.
 
-Currently, two official plugins are available:
+## Next steps
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Check whether the dashboard answers the users' questions
+- Expand test coverage
+- Include a tabular or list view to make exploration easier (right now, it's hard to see small contributors)
+- Add more comprehensive documentation
+- Discuss integrating an API that provides information about department hierarchy
+- Check consistency of data
+- Improve styling
+- Accessibility audit
+- Performance optimizations
+- Caching
+- Error handling
