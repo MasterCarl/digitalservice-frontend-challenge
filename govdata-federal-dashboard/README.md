@@ -4,6 +4,10 @@ This dashboard shows how many datasets were contributed to GovData.de by differe
 
 The dashboard is based on React. It uses the treemap chart from [Nivo](https://nivo.rocks), which is based, in turn, on d3.js. For testing, Jest is used in conjunction with testing-library. [Vite](https://vitejs.dev) is used for frontend tooling, in conjunction with [SWC](https://swc.rs) (Speedy Web Compiler).
 
+## Online preview
+
+You can view this dashboard online at [https://digitalservice-frontend-challenge-two.vercel.app](https://digitalservice-frontend-challenge-two.vercel.app).
+
 ## Installation
 
 Yarn is used as the package manager. If not available, refer to the [installation instructions](https://yarnpkg.com/getting-started/install) to install it.
