@@ -61,7 +61,6 @@ function App() {
           their supervising ministry
         </label>
       </div>
-      <pre>{JSON.stringify(viewOptions)}</pre>
       {data ? (
         <Treemap data={data} viewOptions={viewOptions} />
       ) : (
