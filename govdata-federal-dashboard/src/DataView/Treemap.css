@@ -1,3 +1,11 @@
 .treemap-container {
   height: max(90vh, 800px);
+  color: #213547;
+  background: lightgray;
+}
+
+@media (prefers-color-scheme: light) {
+  .treemap-container {
+    background: inherit;
+  }
 }
