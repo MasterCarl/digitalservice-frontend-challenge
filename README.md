@@ -2,6 +2,10 @@
 
 [GovData.de](https://www.govdata.de/) is the data portal for Germany. The federal, state and local governments can share their data. Although the "Open Data Act" makes it obligatory to share data, only about 52,000 data sets are online so far.
 
+## View submission
+
+For the README and all code and details regarding this submission, please refer to the directory [govdata-federal-dashboard](./govdata-federal-dashboard).
+
 ## Your Task
 
 Create a small web application that provides a dashboard showing how many data sets each federal ministry has made available on GovData. The dashboard should provide the possibility to filter the currently shown result set. It should be easy to tell from the dashboard which ministries have provided the most data.
