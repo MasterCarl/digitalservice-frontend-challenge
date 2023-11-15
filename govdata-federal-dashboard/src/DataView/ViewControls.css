@@ -1,0 +1,12 @@
+.view-options {
+  margin-block-end: 8px;
+}
+
+.view-options label {
+  display: block;
+  text-align: left;
+}
+
+.view-options label input {
+  margin-inline-end: 6px;
+}

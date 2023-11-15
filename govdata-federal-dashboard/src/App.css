@@ -7,15 +7,4 @@
   flex-direction: column;
 }
 
-.treemap-container {
-  height: max(90vh, 800px);
-}
 
-.view-options label {
-  display: block;
-  text-align: left;
-}
-
-.view-options label input {
-  margin-inline-end: 6px;
-}
