@@ -10,3 +10,8 @@
 .treemap-container {
   height: max(90vh, 800px);
 }
+
+.view-options {
+  display: block;
+  text-align: left;
+}
