@@ -31,7 +31,6 @@ function App() {
     <>
       <h1>
         Data sets provided to <a href="https://www.govdata.de/">GovData.de</a>{" "}
-        by federal ministries
       </h1>
       <div className="view-options">
         <label>
