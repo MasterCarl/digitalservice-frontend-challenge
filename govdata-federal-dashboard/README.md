@@ -18,7 +18,7 @@ With `yarn` installed, run `yarn` to install project dependencies, and `yarn dev
 
 To run logic and UI tests, run `yarn test`. Please note that the tests don't cover the complete dashboard.
 
-## Next steps
+## Possible next steps
 
 - Check whether the dashboard answers the users' questions
 - Expand test coverage
@@ -31,3 +31,4 @@ To run logic and UI tests, run `yarn test`. Please note that the tests don't cov
 - Performance optimizations
 - Caching
 - Error handling
+- More functionality
