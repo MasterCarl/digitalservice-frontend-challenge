@@ -17,6 +17,10 @@ interface DataViewProps {
   data: DataContributionMeta[];
 }
 
+/**
+ * This is the main UI element that takes the loaded data, lets the user adjust display options,
+ * and renders it accordingly using child components.
+ */
 export const DataView: React.FC<DataViewProps> = ({ data }) => {
   const [viewOptions, setViewOptions] =
     useState<ViewOptions>(defaultViewOptions);
@@ -31,15 +35,14 @@ export const DataView: React.FC<DataViewProps> = ({ data }) => {
     viewOptions
   );
 
+  // if only ministries are shown, there is only one relevant level of hierarchy
+  // and the display can be simplified
+  const isSingleLevel =
+    viewOptions.hierarchy === "ignore" && viewOptions.showOnlyMinistries;
   return (
     <>
       <ViewControls viewOptions={viewOptions} onChange={setViewOptions} />
-      <Treemap
-        data={rootDataElement}
-        leavesOnly={
-          viewOptions.hierarchy === "ignore" && viewOptions.showOnlyMinistries
-        }
-      />
+      <Treemap data={rootDataElement} leavesOnly={isSingleLevel} />
     </>
   );
 };
